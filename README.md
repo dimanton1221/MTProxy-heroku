@@ -7,6 +7,10 @@ The Telegram Messenger [MTProto proxy](https://github.com/TelegramMessenger/MTPr
 
 > This image is an unofficial fork of [telegrammessenger/proxy](https://hub.docker.com/r/telegrammessenger/proxy) which left unmaintained. Automatically built from the official implementation.
 
+## The Easiest Way
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ##  🚀 Quick Reference
 
 First pull the docker image from docker-hub: `docker pull mtproxy/mtproxy`
@@ -44,7 +48,7 @@ Then obtain links for Telegram app by reading container's logs with `docker logs
 
 ### ℹ️ Tips
 
-- The secret will persist across container upgrades in a volume. It is a mandatory configuration parameter. If not provided, it will be generated automatically at container start. 
+- The secret will persist across container upgrades in a volume. It is a mandatory configuration parameter. If not provided, it will be generated automatically at container start.
 
 - You may forward any other port to the container's `443` by changing left side port.
 
@@ -66,7 +70,7 @@ If you need to specify a custom secret (say, if you are deploying multiple proxi
 
 The proxy may be configured to accept up to 16 different secrets. You may specify them explicitly as comma-separated hex strings in the `SECRET` environment variable, or you may let the container generate the secrets automatically using the `SECRET_COUNT` variable to limit the number of generated secrets.
 
-**💡Example:** Manualy specify different secrets: `docker run ... -e SECRET=secret1,secret2 mtproxy/mtproxy` 
+**💡Example:** Manualy specify different secrets: `docker run ... -e SECRET=secret1,secret2 mtproxy/mtproxy`
 
 **💡Example:** Set secret count: `docker run ... -e SECRET_COUNT=4 mtproxy/mtproxy`
 

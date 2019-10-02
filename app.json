@@ -1,0 +1,22 @@
+{
+  "name": "MTProxy",
+  "description": "MTProxy. Powered by @ThankTelegram",
+  "keywords": [
+    "telegram",
+    "best",
+    "indian",
+    "mtproxy",
+    "heroku",
+    "container"
+  ],
+  "repository": "https://github.com/SpEcHiDe/MTProxy",
+  "success_url": "https://telegram.dog/ThankTelegram",
+  "website": "https://github.com/SpEcHiDe/MTProxy",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "container"
+}
