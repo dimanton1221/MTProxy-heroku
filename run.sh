@@ -66,7 +66,7 @@ fi
 
 # Obtain a secret, used to connect to telegram servers
 PROXY_SECRET_FILE=/data/proxy.secret
-curl -s https://core.telegram.org/getProxySecret -o $PROXY_SECRET_FILE || {
+curl -s https://github.com/EliasMusk/MTProxy-heroku/blob/master/getProxySecret -o $PROXY_SECRET_FILE || {
   echo '[F] Cannot download proxy secret from Telegram servers.'
   exit 2
 }
