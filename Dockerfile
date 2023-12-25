@@ -1,5 +1,5 @@
 # Stage 0: Build
-FROM debian:9-slim
+FROM debian:12.4-slim
 
 RUN apt-get update
 RUN apt-get install -y \
